@@ -1,0 +1,15 @@
+﻿{
+    "sections": [
+        { "id": "abstract", "label": "摘要", "enabled": true },
+        { "id": "summary", "label": "研究概述", "enabled": true },
+        { "id": "timeline", "label": "研究脉络", "enabled": true },
+        { "id": "method_category", "label": "核心方法分类", "enabled": true },
+        { "id": "innovation", "label": "创新点汇总", "enabled": true },
+        { "id": "comparison", "label": "技术对比表", "enabled": true },
+        { "id": "experiment", "label": "实验数据汇总", "enabled": true },
+        { "id": "genealogy", "label": "团队谱系", "enabled": false },
+        { "id": "future", "label": "未来方向", "enabled": true },
+        { "id": "references", "label": "参考文献", "enabled": true }
+    ],
+    "_note": "enabled: false表示该模块默认不生成，可在使用时通过对话开启。团队谱系模块仅在精读时team_detail=genealogy时有用。"
+}

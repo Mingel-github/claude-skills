@@ -1,0 +1,23 @@
+﻿Record 1 of 3
+Author(s): Parkinson, B. W.; Axelrad, P.
+Title: Autonomous GPS Integrity Monitoring Using the Pseudorange Residual
+Source: NAVIGATION, 1988, 35(2), pp.255-274
+Year: 1988
+DOI: 10.1002/j.2161-4296.1988.tb00955.x
+Abstract: The use of GPS for navigation-critical applications such as aircraft nonprecision approach requires the navigation data to be both extremely accurate and extremely reliable. This paper describes a method for autonomous GPS satellite failure detection and isolation.
+
+Record 2 of 3
+Author(s): Brown, R. G.
+Title: A Baseline GPS RAIM Scheme and a Note on the Equivalence of Three RAIM Methods
+Source: NAVIGATION, 1992, 39(3), pp.301-316
+Year: 1992
+DOI: 10.1002/j.2161-4296.1992.tb02272.x
+Abstract: The RTCA GPS Minimum Operational Performance Standards have now been released. A considerable portion of the MOPS is devoted to GPS integrity requirements. This paper proposes a baseline RAIM scheme that can serve as a standard for performance comparisons.
+
+Record 3 of 3
+Author(s): Sturza, M. A.
+Title: Navigation System Integrity Monitoring Using Redundant Measurements
+Source: NAVIGATION, 1988, 35(4), pp.483-501
+Year: 1988
+DOI: 10.1002/j.2161-4296.1988.tb00975.x
+Abstract: This paper describes a method for navigation system integrity monitoring using redundant measurements. The parity approach to failure detection is presented.

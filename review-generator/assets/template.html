@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文献综述报告</title>
+    <style>
+        /* 你的苹果风格：简约、深邃、大留白、细字体、毛玻璃效果 */
+        :root {
+            --bg-primary: #f5f5f7;
+            --bg-card: rgba(255,255,255,0.72);
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --radius: 18px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 32px;
+        }
+        /* ... 更多样式 */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <h2>筛选</h2>
+            <div class="filter-group">
+                <label>按年份</label>
+                {{year_filters}}
+            </div>
+            <div class="filter-group">
+                <label>按主题</label>
+                {{topic_filters}}
+            </div>
+            <div class="filter-group">
+                <label>按方法</label>
+                {{method_filters}}
+            </div>
+        </aside>
+        <!-- 主内容 -->
+        <main class="content">
+            <header>
+                <h1>{{report_title}}</h1>
+                <p>{{report_subtitle}}</p>
+            </header>
+            {{content_sections}}
+        </main>
+    </div>
+    <script>
+        // 交互逻辑
+        {{interactive_script}}
+    </script>
+</body>
+</html>

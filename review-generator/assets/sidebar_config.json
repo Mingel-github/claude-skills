@@ -1,0 +1,46 @@
+﻿{
+    "filters": [
+        {
+            "id": "year",
+            "label": "按年份",
+            "type": "checkbox",
+            "options": []
+        },
+        {
+            "id": "topic",
+            "label": "按问题焦点",
+            "type": "checkbox",
+            "options": []
+        },
+        {
+            "id": "method",
+            "label": "按方法类别",
+            "type": "checkbox",
+            "options": []
+        },
+        {
+            "id": "team",
+            "label": "按团队/机构",
+            "type": "checkbox",
+            "options": []
+        },
+        {
+            "id": "doc_type",
+            "label": "按文献类型",
+            "type": "checkbox",
+            "options": ["Article", "Review", "Proceedings Paper"]
+        },
+        {
+            "id": "priority",
+            "label": "按优先级",
+            "type": "radio",
+            "options": ["全部", "高优先级", "中优先级", "低优先级"]
+        }
+    ],
+    "search": {
+        "enabled": true,
+        "placeholder": "搜索标题、作者、摘要...",
+        "fields": ["title", "author", "abstract"]
+    },
+    "_note": "topic、method、team的options由AI根据实际论文内容自动填充，也可手动编辑此文件预设。"
+}

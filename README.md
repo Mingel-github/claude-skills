@@ -1,8 +1,8 @@
 # Claude Code Skills 管理手册
 
 > 安装位置：`C:\Users\mingel\.claude\skills\`  
-> 总数：30 个，约 618 KB  
-> 整理日期：2026-07-10
+> 总数：39 个，约 900 KB  
+> 整理日期：2026-07-17
 
 ---
 
@@ -43,10 +43,18 @@
 | `doc-coauthoring` | 16 KB | 三阶段文档协作（收集→起草→读者测试） | 需要结构化写文档 |
 | `pdf-processing-pro` | 56 KB | PDF 表单/表格/OCR 处理 | 扫描版 PDF 要 OCR |
 | `scientific-toolkit-skill` | 10 KB | MATLAB/Python 科学计算+期刊图表 | 写科研计算代码 |
+| `paper-forge` | 12 KB | 12 节深度论文阅读：从重建思考路径到反例设计+follow-up idea | 深度理解一篇 CS/工程论文 |
+| `paper-analyst` | 12 KB | 多模式论文分析（quick/standard/extended/presentation） | 需要组会汇报、PPT 大纲 |
+| `paper-deep-reader` | 8 KB | 结构化精读：研究问题、方法、实验数据、创新点、对比分析 | 提取论文结构化信息 |
+| `paper-filter` | 8 KB | 4 维打分筛选（相关性/创新性/可复现性/完整性） | 从大量文献中筛选值得读的 |
+| `paper-prioritizer` | 8 KB | 多维度优先级排序+分批次 | 确定精读顺序 |
+| `review-generator` | 16 KB | 生成综述：技术对比表+创新点归类+团队谱系+未来方向 | 需要横向比较多篇论文 |
+| `wos-parser` | 8 KB | 解析 Web of Science 导出文件 | 从 WoS 导入文献元数据 |
+| `academic-pipeline` | 8 KB | 一键串联 WoS解析→筛选→排序→读→综述 全流程 | 跑完整文献综述流水线 |
 
 ---
 
-## 🔴 OFF — 暂时关闭（8 个）
+## 🔴 OFF — 暂时关闭（9 个）
 
 这些 skill 与已有 skill 重叠或场景太窄，需要时再开：
 
@@ -60,6 +68,7 @@
 | `office-academic-skill` | 12 KB | 学术 Word/PPT 场景窄 | 需要生成学术报告/答辩 PPT |
 | `ml-paper-writing` | 40 KB | 仅适用于 NeurIPS/ICML/ICLR 等 ML 顶会 | 投稿 ML 顶会时 |
 | `research-writing-skill` | 44 KB | 和 `humanizer` + 手动润色重叠 | 需要中文论文写+审稿回复 |
+| `pdf-processor` | 8 KB | 与 `pdf-processing-pro`（56KB）完全重叠 | surveywork 流水线的一个环节，独立使用时用 pro |
 
 ---
 
@@ -135,8 +144,10 @@ ls ~/.claude/skills/
 
 ```
 🔍 搜论文    → "用 semantic-scholar 搜索 XXX"
-📖 读论文    → 直接说"读这篇论文"（自动触发 paper-reader）
-📚 整理文献  → "用 systematic-screening 筛选" + "用 annotated-bibliography 导出"
+📖 精读论文  → paper-forge（深度批判）+ paper-deep-reader（结构化提取）
+📊 论文对比  → "用 review-generator 生成综述+技术对比表"
+🕳️ 研究空白  → "用 review-generator 的未来方向" / "用 med-research-gaps 分析gap"
+📚 文献流水线 → "用 academic-pipeline 一键跑完 搜→筛→排→读→综述"
 ✅ 防幻觉    → "用 literature-research-liteng 深度读" + "用 fact-check 验证"
 ✍️ 写论文    → humanizer 润色 + doc-coauthoring 协作 + ml-paper-writing(ML顶会)
 💻 写代码    → coding-standards(写前) + code-review(写后)
